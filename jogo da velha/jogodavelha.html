@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="interface">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/img/logojogos (2).png" alt="Logo jogos">
+            </a>
+        </div><!--logo-->
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="/home.html">Início</a></li>
+                <li><a href="#">Jogo 2</a></li>
+                <li><a href="#">Jogo 3</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-f5">
+            <a href="/jogo da velha/jogodavelha.html">
+                <button>Recomeçar</button>
+            </a>
+        </div><!--btn-recomeçar-->
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar" id="btn-fechar-menu">
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+        </div><!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </div><!--interface-->
+</header>
+
+  <div class="container">
+    <div class="h1">
+        <h1>SEJA BEM-VINDO AO JOGO DA VELHA</h1>
+    </div>
+
+    <!--botão para escolher o modo de jogo -->
+
+    <div class="btn-f5">
+        <button onclick="startGame('PvP')">MODO DUELO </button>
+        <button onclick="startGame('PvC')">MODO DIFÍCIL</button>
+    </div>
+  <!--jogo inicio -->
+
+   <div id="board" class="board">
+        
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+        <div class="cell" onclick="makeMove(this)"></div>
+
+        <button class="button" onclick="changeBackground()">Mudar Fundo</button>
+    </div>
+ <!--jogo final -->
+
+ <!--notificação-->
+      <div class="notification" id="gameNotification">
+        <div class="notiglow"></div>
+        <div class="notiborderglow"></div>
+        <div class="notititle">
+            <P>MODO DUELO: JOGADOR 1 VS JOGADOR 2<br>CONVIDE UM AMIGO PARA JOGAR</P>
+            <P>MODO ALEATÓRIO: JOGADOR 1 VS COMPUTADOR</P></div>
+        <div class="notibody">
+           
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
