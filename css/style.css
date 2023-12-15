@@ -88,7 +88,7 @@ header nav.menu-desktop ul li {
 .menu-mobile{
   background-color: #000;
   height: 100vh;
-  position: fixed;
+  position:fixed;
   top: 0;
   right: 0;
   z-index: 99999;

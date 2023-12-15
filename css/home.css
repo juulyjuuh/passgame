@@ -9,8 +9,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  /* Dark mode colors and gradient */
-  background: #121212; /* Fallback for browsers that don't support gradients */
+  
+  background: #121212; 
   background: linear-gradient(
       135deg,
       #121212 25%,
@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-    /* Add styles for the container if needed */
+   
 }
 
 .interface {
@@ -81,7 +81,7 @@ h1, h2 {
 }
 
 .cards .red {
-  background-image: url(/img/red.png);
+  background-color: #c73333;
   background-repeat: no-repeat; 
   background-size:cover;
 }
